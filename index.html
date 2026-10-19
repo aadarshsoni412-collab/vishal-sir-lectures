@@ -3,102 +3,57 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#173f8a">
-<title>Adarsh Online Classes</title>
+<title>Vishal Sir Lectures | Classes 9–12</title>
 <style>
-:root{--blue:#173f8a;--blue2:#2458b8;--ink:#18243b;--muted:#667085;--bg:#f4f7fc;--line:#e4eaf3;--green:#16845b}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:12px 16px;font-weight:700}.primary{background:var(--blue);color:#fff}.secondary{background:#eaf0ff;color:var(--blue)}.muted{color:var(--muted)}.hidden{display:none!important}
-header{background:linear-gradient(120deg,#173f8a,#2d65c8);color:white;padding:18px 16px 26px;border-radius:0 0 26px 26px}.top{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:18px}.logo{display:grid;place-items:center;background:#fff;color:var(--blue);width:42px;height:42px;border-radius:14px;font-size:22px}.hero{max-width:1000px;margin:26px auto 0}.hero h1{font-size:clamp(25px,5vw,38px);line-height:1.15;margin:0 0 10px}.hero p{max-width:580px;color:#e1eaff;margin:0 0 18px}.wrap{max-width:1000px;margin:20px auto;padding:0 14px 36px}.panel,.course,.stat{background:white;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 5px 20px #173f8a08}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.stat strong{font-size:24px;display:block;color:var(--blue)}h2{font-size:21px;margin:24px 0 12px}.course .emoji{font-size:28px}.course h3{margin:8px 0}.course p{font-size:14px;color:var(--muted);min-height:38px}.tag{display:inline-block;background:#eaf7f1;color:var(--green);font-size:12px;font-weight:800;padding:5px 9px;border-radius:99px}.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.field{width:100%;padding:12px;border:1px solid #ccd6e6;border-radius:11px;margin:6px 0 12px;background:#fff}.auth{max-width:440px;margin:26px auto}.auth h2{margin-top:0}.small{font-size:13px;line-height:1.5}.notice{padding:12px;border-radius:12px;background:#fff6df;color:#79520a;font-size:13px;margin:12px 0}.classroom{margin-top:14px;background:#111827;border-radius:16px;overflow:hidden}.classroom iframe{width:100%;height:min(68vh,560px);border:0;display:block}.footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
-@media(max-width:700px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.hero{margin-top:22px}.course p{min-height:0}.top{align-items:flex-start}.brand{font-size:16px}}
+:root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#64748b;--brand:#2457d6;--brand2:#123b9a;--line:#e2e8f0}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(135deg,#123b9a,#3674ed);color:white;padding:24px 16px 28px}
+.wrap{max-width:1050px;margin:auto}nav{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.logo{font-weight:800;font-size:1.15rem;display:flex;align-items:center;gap:10px}.logo img{width:54px;height:54px;object-fit:contain;border-radius:50%;background:#fff}.lang,button,select,input{font:inherit}button,.lang{border:0;border-radius:10px;padding:10px 14px;cursor:pointer}.lang{background:#ffffff22;color:white;border:1px solid #ffffff55}
+.hero{padding:28px 0 8px}.hero h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.1;margin:0 0 10px}.hero p{margin:0;color:#e4ecff}.searchrow{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}.searchrow input{flex:1;min-width:190px;padding:12px;border-radius:10px;border:1px solid #ffffff70}
+main{padding:22px 16px 48px}.notice{background:#eaf1ff;border:1px solid #c8d8ff;padding:13px 15px;border-radius:12px;margin-bottom:20px;color:#233d78}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.section-head h2{margin:0 0 14px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 18px}.filters button{background:white;border:1px solid var(--line);color:var(--ink)}.filters button.active{background:var(--brand);color:white;border-color:var(--brand)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:0 4px 18px #16254b08}.tag{display:inline-block;background:#e9efff;color:#214bb0;padding:4px 8px;border-radius:999px;font-size:.8rem;font-weight:700}.card h3{margin:12px 0 6px}.card p{color:var(--muted);margin:0 0 14px;font-size:.94rem}.card button,.primary{background:var(--brand);color:white}.card button:hover,.primary:hover{background:var(--brand2)}
+.panel{margin-top:28px;background:white;border:1px solid var(--line);border-radius:16px;padding:18px}.panel h2{margin-top:0}.row{display:flex;gap:10px;flex-wrap:wrap}.row input,.row select{flex:1;min-width:170px;padding:11px;border:1px solid var(--line);border-radius:10px}.muted{color:var(--muted);font-size:.9rem}#liveArea{display:none;margin-top:14px;padding:14px;border-radius:12px;background:#f8fafc;border:1px solid var(--line)}#liveFrame{width:100%;height:420px;border:0;border-radius:12px;background:#e2e8f0}footer{text-align:center;padding:24px 16px;color:var(--muted)}
+@media(max-width:520px){header{padding-top:18px}#liveFrame{height:320px}}
 </style>
 </head>
 <body>
-<header>
-  <div class="top">
-    <div class="brand"><div class="logo">🎓</div><span>Adarsh Online Classes</span></div>
-    <div class="row" style="justify-content:flex-end">
-      <select id="lang" aria-label="Language" style="padding:9px;border-radius:10px;border:0" onchange="setLang(this.value)"><option value="hi">हिंदी</option><option value="en">English</option></select>
-      <button id="headerLogin" class="secondary" onclick="showAuth()">Login</button>
-      <button id="logoutBtn" class="secondary hidden" onclick="logout()">Logout</button>
-    </div>
-  </div>
-  <div class="hero">
-    <span class="tag">CLASS 1–12 • LIVE LEARNING</span>
-    <h1 id="heroTitle">सीखें आगे बढ़ें, अपने घर से।</h1>
-    <p id="heroText">कक्षा 1 से 12 तक के लिए ऑनलाइन कोर्स, लाइव क्लास और पढ़ाई की सामग्री।</p>
-    <button class="secondary" onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})" id="exploreBtn">कोर्स देखें ↓</button>
-  </div>
-</header>
+<header><div class="wrap">
+<nav><div class="logo"><img src="logo.jpg" alt="VS Lectures logo"> Vishal Sir Lectures</div><button class="lang" id="langBtn">English</button></nav>
+<div class="hero"><h1 id="heroTitle">कक्षा 9 से 12 तक की पढ़ाई, एक जगह</h1><p id="heroSub">विषय चुनें, लेक्चर देखें और लाइव क्लास की जानकारी पाएँ।</p>
+<div class="searchrow"><input id="search" placeholder="लेक्चर या विषय खोजें…"><button class="lang" onclick="document.getElementById('classes').scrollIntoView({behavior:'smooth'})">लेक्चर देखें ↓</button></div></div>
+</div></header>
 <main class="wrap">
-  <section id="authSection" class="panel auth hidden">
-    <h2 id="authTitle">विद्यार्थी लॉगिन</h2>
-    <p class="muted small" id="authDesc">डेमो देखने के लिए अपना नाम और ईमेल डालें।</p>
-    <label for="studentName">नाम / Name</label><input class="field" id="studentName" autocomplete="name" placeholder="आपका नाम">
-    <label for="studentEmail">ईमेल / Email</label><input class="field" id="studentEmail" type="email" autocomplete="email" placeholder="you@example.com">
-    <button class="primary" style="width:100%" onclick="demoLogin()" id="loginSubmit">डेमो में लॉगिन करें</button>
-    <p class="small muted">यह केवल फ्रंट-एंड डेमो है; अभी वास्तविक अकाउंट/पासवर्ड सिस्टम नहीं है।</p>
-  </section>
-
-  <section id="dashboard" class="hidden">
-    <div class="panel row"><div><div class="muted small" id="welcomeLabel">आपका डैशबोर्ड</div><h2 style="margin:4px 0" id="welcomeName">नमस्ते!</h2><div class="muted small" id="welcomeSub">अपना कोर्स चुनें और सीखना शुरू करें।</div></div><div style="font-size:38px">👋</div></div>
-    <div class="stats">
-      <div class="stat"><strong>12</strong><span class="muted small" id="statClasses">कक्षाएँ</span></div>
-      <div class="stat"><strong>2</strong><span class="muted small" id="statLanguages">भाषाएँ</span></div>
-      <div class="stat"><strong>Live</strong><span class="muted small" id="statLearning">लाइव सीखना</span></div>
-    </div>
-  </section>
-
-  <section id="courses">
-    <div class="row"><h2 id="coursesTitle">लोकप्रिय कोर्स</h2><span class="muted small" id="courseCount">कक्षा 1–12</span></div>
-    <div class="grid" id="courseGrid"></div>
-  </section>
-
-  <section id="liveSection" class="hidden">
-    <div class="row"><h2 id="liveTitle">लाइव क्लासरूम</h2><button class="secondary" onclick="closeLive()" id="backBtn">← वापस</button></div>
-    <div class="panel">
-      <h3 id="liveCourseName">लाइव क्लास</h3>
-      <p class="muted small" id="liveHelp">माइक्रोफोन और कैमरा की अनुमति दें।</p>
-      <div class="notice" id="jitsiNotice">महत्वपूर्ण: यह शुरुआती डेमो Jitsi की सार्वजनिक मीटिंग सेवा इस्तेमाल करता है। कमरे का नाम जानने वाला व्यक्ति जुड़ सकता है। संवेदनशील या निजी कक्षा के लिए इसे अभी इस्तेमाल न करें।</div>
-      <div class="classroom"><iframe id="jitsiFrame" allow="camera; microphone; fullscreen; display-capture; autoplay" title="Live classroom"></iframe></div>
-      <p class="small muted">अगर कॉल नहीं खुले, तो पेज को Chrome में खोलें और कैमरा/माइक अनुमति जाँचें। कुछ ब्राउज़र iframe कॉल को रोक सकते हैं।</p>
-    </div>
-  </section>
-
-  <section id="adminSection" class="hidden">
-    <h2 id="adminTitle">शिक्षक डेमो पैनल</h2>
-    <div class="panel">
-      <p class="small muted">डेमो में किसी भी ईमेल से लॉगिन करने पर यह पैनल दिख सकता है। यह वास्तविक सुरक्षित Admin Panel नहीं है। इसे सार्वजनिक वेबसाइट पर ऐसे ही न रखें।</p>
-      <label for="roomInput">लाइव रूम का नाम / Room name</label>
-      <input class="field" id="roomInput" value="AdarshClassDemo2026" maxlength="80">
-      <button class="primary" onclick="startLive('Classroom')" id="startLiveBtn">लाइव क्लास शुरू करें</button>
-      <p class="small muted">वास्तविक संस्करण में शिक्षक का रोल सर्वर पर सुरक्षित तरीके से सत्यापित होना चाहिए।</p>
-    </div>
-  </section>
+<div class="notice" id="notice">नोट: अभी यह डेमो वेबसाइट है। यहाँ विषय और लेक्चर के नमूना नाम हैं; असली वीडियो लिंक शिक्षक द्वारा जोड़े जाने हैं।</div>
+<section id="classes">
+<div class="section-head"><h2 id="classesTitle">अपनी कक्षा चुनें</h2><span class="muted" id="count"></span></div>
+<div class="filters" id="filters"></div><div class="grid" id="lectureGrid"></div>
+</section>
+<section class="panel">
+<h2 id="liveTitle">🔴 विद्यार्थी लॉगिन और लाइव क्लास</h2>
+<p class="muted" id="liveDesc">डेमो प्रवेश: नाम और क्लास भरकर आगे बढ़ें। यह अभी सुरक्षित असली लॉगिन नहीं है।</p>
+<div class="row"><input id="studentName" placeholder="विद्यार्थी का नाम"><select id="studentClass"><option value="">कक्षा चुनें</option><option>9</option><option>10</option><option>11</option><option>12</option></select><button class="primary" id="loginBtn">लाइव क्लास खोलें</button></div>
+<div id="liveArea"><h3 id="welcome"></h3><p class="muted" id="roomNote">लाइव क्लास में शामिल होने से पहले शिक्षक से सही मीटिंग नाम/लिंक लें।</p><div class="row"><input id="roomName" value="VishalSirClassRoom" aria-label="Room name"><button class="primary" id="joinBtn">Join Live Class</button></div><div id="frameWrap"></div></div>
+</section>
+<section class="panel"><h2 id="aboutTitle">शिक्षक के लिए</h2><p id="aboutText" class="muted">हर कार्ड में असली लेक्चर लिंक जोड़ने के लिए index.html में lectures सूची संपादित करें। निजी लाइव क्लास के लिए सुरक्षित लॉगिन और मीटिंग एक्सेस नियंत्रण लगाना जरूरी है।</p></section>
 </main>
-<div class="footer">© <span id="year"></span> Adarsh Online Classes • Learning for Classes 1–12</div>
+<footer>© Vishal Sir Lectures · Classes 9–12</footer>
 <script>
-const courses=[
- {grade:"Class 1–5",hi:"प्राथमिक कक्षाएँ",en:"Primary Classes",emoji:"🌱",descHi:"बेसिक गणित, हिंदी, अंग्रेज़ी और EVS",descEn:"Basic Maths, Hindi, English and EVS"},
- {grade:"Class 6–8",hi:"मिडिल स्कूल",en:"Middle School",emoji:"📘",descHi:"गणित, विज्ञान, सामाजिक विज्ञान",descEn:"Maths, Science and Social Studies"},
- {grade:"Class 9–10",hi:"हाई स्कूल",en:"High School",emoji:"🧪",descHi:"बोर्ड परीक्षा की तैयारी और अभ्यास",descEn:"Board exam preparation and practice"},
- {grade:"Class 11–12",hi:"सीनियर सेकेंडरी",en:"Senior Secondary",emoji:"🚀",descHi:"विषय-आधारित पढ़ाई और रिविजन",descEn:"Subject-focused learning and revision"},
- {grade:"Hindi + English",hi:"भाषा कौशल",en:"Language Skills",emoji:"🔤",descHi:"हिंदी और अंग्रेज़ी भाषा अभ्यास",descEn:"Hindi and English language practice"},
- {grade:"Live Practice",hi:"लाइव अभ्यास",en:"Live Practice",emoji:"🎥",descHi:"शिक्षक के साथ ऑनलाइन सवाल-जवाब",descEn:"Online Q&A with a teacher"}
-];
-let currentLang="hi", student=null, currentCourse="";
-const t={
- hi:{heroTitle:"सीखें आगे बढ़ें, अपने घर से।",heroText:"कक्षा 1 से 12 तक के लिए ऑनलाइन कोर्स, लाइव क्लास और पढ़ाई की सामग्री।",exploreBtn:"कोर्स देखें ↓",login:"लॉगिन",logout:"लॉगआउट",coursesTitle:"लोकप्रिय कोर्स",authTitle:"विद्यार्थी लॉगिन",authDesc:"डेमो देखने के लिए अपना नाम और ईमेल डालें।",loginSubmit:"डेमो में लॉगिन करें",welcomeLabel:"आपका डैशबोर्ड",welcomeSub:"अपना कोर्स चुनें और सीखना शुरू करें।",statClasses:"कक्षाएँ",statLanguages:"भाषाएँ",statLearning:"लाइव सीखना",liveTitle:"लाइव क्लासरूम",backBtn:"← वापस",liveHelp:"माइक्रोफोन और कैमरा की अनुमति दें।",jitsiNotice:"महत्वपूर्ण: यह शुरुआती डेमो Jitsi की सार्वजनिक मीटिंग सेवा इस्तेमाल करता है। कमरे का नाम जानने वाला व्यक्ति जुड़ सकता है। संवेदनशील या निजी कक्षा के लिए इसे अभी इस्तेमाल न करें।",adminTitle:"शिक्षक डेमो पैनल",startLiveBtn:"लाइव क्लास शुरू करें",join:"लाइव क्लास देखें",welcome:"नमस्ते",needName:"कृपया अपना नाम और सही ईमेल डालें।",room:"क्लासरूम"},
- en:{heroTitle:"Learn and grow from home.",heroText:"Online courses, live classes and study resources for Classes 1–12.",exploreBtn:"Explore courses ↓",login:"Login",logout:"Logout",coursesTitle:"Popular courses",authTitle:"Student Login",authDesc:"Enter your name and email to try the demo.",loginSubmit:"Enter demo",welcomeLabel:"Your dashboard",welcomeSub:"Choose a course and start learning.",statClasses:"Classes",statLanguages:"Languages",statLearning:"Live learning",liveTitle:"Live Classroom",backBtn:"← Back",liveHelp:"Allow microphone and camera access.",jitsiNotice:"Important: This prototype uses Jitsi's public meeting service. Anyone who knows the room name may be able to join. Do not use it for sensitive or private classes.",adminTitle:"Teacher Demo Panel",startLiveBtn:"Start live class",join:"Join live class",welcome:"Hello",needName:"Enter your name and a valid email.",room:"Classroom"}
+const subjects={
+"9":[["Physics","गति और बल","Motion and force basics"],["Chemistry","हमारे आसपास के पदार्थ","Matter around us"],["Biology","कोशिका और जीवन","Cells and living things"]],
+"10":[["Physics","प्रकाश और विद्युत","Light and electricity"],["Chemistry","रासायनिक अभिक्रियाएँ","Chemical reactions and equations"],["Biology","जैविक प्रक्रियाएँ","Life processes"]],
+"11":[["Physics","मात्रक और मापन","Units and measurements"],["Chemistry","रसायन विज्ञान की मूल अवधारणाएँ","Basic concepts and mole concept"],["Biology","जीव जगत","The living world"]],
+"12":[["Physics","वैद्युत आवेश और क्षेत्र","Electric charges and fields"],["Chemistry","विलयन","Solutions"],["Biology","जीवों में जनन","Reproduction in organisms"]]
 };
-function setLang(v){currentLang=v;document.documentElement.lang=v;const x=t[v];Object.keys(x).forEach(k=>{const el=document.getElementById(k);if(el)el.textContent=x[k]});document.getElementById("headerLogin").textContent=student?x.logout:x.login;renderCourses();if(student)updateWelcome()}
-function renderCourses(){const grid=document.getElementById("courseGrid");grid.innerHTML="";courses.forEach(c=>{const d=document.createElement("article");d.className="course";d.innerHTML=`<div class="emoji">${c.emoji}</div><span class="tag">${c.grade}</span><h3>${currentLang==="hi"?c.hi:c.en}</h3><p>${currentLang==="hi"?c.descHi:c.descEn}</p><button class="primary" style="width:100%">${t[currentLang].join}</button>`;d.querySelector("button").onclick=()=>{if(!student){showAuth();return}startLive(c.grade)};grid.appendChild(d)})}
-function showAuth(){document.getElementById("authSection").classList.remove("hidden");document.getElementById("authSection").scrollIntoView({behavior:"smooth",block:"start"})}
-function demoLogin(){const n=document.getElementById("studentName").value.trim(),e=document.getElementById("studentEmail").value.trim();if(!n||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){alert(t[currentLang].needName);return}student={name:n,email:e};document.getElementById("authSection").classList.add("hidden");document.getElementById("dashboard").classList.remove("hidden");document.getElementById("headerLogin").classList.add("hidden");document.getElementById("logoutBtn").classList.remove("hidden");document.getElementById("adminSection").classList.remove("hidden");updateWelcome();document.getElementById("dashboard").scrollIntoView({behavior:"smooth"});}
-function updateWelcome(){document.getElementById("welcomeName").textContent=t[currentLang].welcome+", "+student.name+"!";document.getElementById("welcomeSub").textContent=student.email}
-function logout(){student=null;document.getElementById("dashboard").classList.add("hidden");document.getElementById("adminSection").classList.add("hidden");document.getElementById("liveSection").classList.add("hidden");document.getElementById("logoutBtn").classList.add("hidden");document.getElementById("headerLogin").classList.remove("hidden");document.getElementById("authSection").classList.add("hidden");window.scrollTo({top:0,behavior:"smooth"})}
-function startLive(course){currentCourse=course;let room=(document.getElementById("roomInput").value||"AdarshClassDemo2026").trim().replace(/[^a-zA-Z0-9_-]/g,"");if(!room)room="AdarshClassDemo2026";if(course!=="Classroom")room=room+"-"+course.replace(/[^a-zA-Z0-9]/g,"");document.getElementById("liveCourseName").textContent=(currentLang==="hi"?"कक्षा: ":"Class: ")+course;document.getElementById("jitsiFrame").src="https://meet.jit.si/"+encodeURIComponent(room);document.getElementById("liveSection").classList.remove("hidden");document.getElementById("liveSection").scrollIntoView({behavior:"smooth"})}
-function closeLive(){document.getElementById("jitsiFrame").src="about:blank";document.getElementById("liveSection").classList.add("hidden");document.getElementById("courses").scrollIntoView({behavior:"smooth"})}
-document.getElementById("year").textContent=new Date().getFullYear();renderCourses();
+let selected="9", english=false;
+const labels={hi:{choose:"अपनी कक्षा चुनें",notice:"नोट: अभी यह डेमो वेबसाइट है। यहाँ विषय और लेक्चर के नमूना नाम हैं; असली वीडियो लिंक शिक्षक द्वारा जोड़े जाने हैं।",search:"लेक्चर या विषय खोजें…",watch:"लेक्चर विवरण",live:"लाइव क्लास खोलें"},en:{choose:"Choose your class",notice:"Demo site: subjects and lecture titles are samples. The teacher must add actual video links.",search:"Search lectures or subjects…",watch:"Lecture details",live:"Open live class"}};
+function renderFilters(){document.getElementById('filters').innerHTML=["9","10","11","12"].map(c=>`<button class="${selected===c?'active':''}" onclick="selected='${c}';renderFilters();renderLectures()">Class ${c}</button>`).join("")}
+function renderLectures(){const q=document.getElementById('search').value.toLowerCase();const list=subjects[selected].filter(x=>x.join(" ").toLowerCase().includes(q));document.getElementById('count').textContent=`${list.length} subjects`;document.getElementById('lectureGrid').innerHTML=list.map((x,i)=>`<article class="card"><span class="tag">Class ${selected}</span><h3>${x[0]}</h3><p><strong>${x[1]}</strong><br>${x[2]}</p><button onclick="showDetails('${selected}','${x[0]}','${x[1]}')">${english?'Lecture details':'लेक्चर विवरण'}</button></article>`).join('')||'<p>कोई परिणाम नहीं मिला।</p>'}
+function showDetails(c,s,t){alert((english?'Class ':'कक्षा ')+c+' · '+s+'\\n'+t+'\\n\\n'+(english?'This is a sample listing. Actual lecture link will be added by the teacher.':'यह नमूना लेक्चर है। असली वीडियो लिंक शिक्षक जोड़ेंगे।'))}
+document.getElementById('search').addEventListener('input',renderLectures);
+document.getElementById('langBtn').onclick=()=>{english=!english;document.getElementById('langBtn').textContent=english?'हिंदी':'English';document.getElementById('heroTitle').textContent=english?'Learn for Classes 9 to 12, all in one place':'कक्षा 9 से 12 तक की पढ़ाई, एक जगह';document.getElementById('heroSub').textContent=english?"Choose a subject, browse lectures and find live class details.":"विषय चुनें, लेक्चर देखें और लाइव क्लास की जानकारी पाएँ।";document.getElementById('classesTitle').textContent=labels[english?'en':'hi'].choose;document.getElementById('notice').textContent=labels[english?'en':'hi'].notice;document.getElementById('search').placeholder=labels[english?'en':'hi'].search;document.getElementById('liveTitle').textContent=english?'🔴 Student Login & Live Class':'🔴 विद्यार्थी लॉगिन और लाइव क्लास';document.getElementById('liveDesc').textContent=english?'Demo access: enter your name and class. This is not secure authentication yet.':'डेमो प्रवेश: नाम और क्लास भरकर आगे बढ़ें। यह अभी सुरक्षित असली लॉगिन नहीं है।';document.getElementById('loginBtn').textContent=labels[english?'en':'hi'].live;document.getElementById('aboutTitle').textContent=english?'For the teacher':'शिक्षक के लिए';document.getElementById('aboutText').textContent=english?'Edit the lectures list in index.html to add real lecture links. Private live classes need secure login and meeting access controls.':'हर कार्ड में असली लेक्चर लिंक जोड़ने के लिए index.html में lectures सूची संपादित करें। निजी लाइव क्लास के लिए सुरक्षित लॉगिन और मीटिंग एक्सेस नियंत्रण लगाना जरूरी है।';renderLectures()};
+document.getElementById('loginBtn').onclick=()=>{const n=document.getElementById('studentName').value.trim(),c=document.getElementById('studentClass').value;if(!n||!c){alert(english?'Enter your name and class first.':'पहले अपना नाम और कक्षा चुनें।');return}document.getElementById('liveArea').style.display='block';document.getElementById('welcome').textContent=(english?'Welcome, ':'स्वागत है, ')+n+' · Class '+c;document.getElementById('liveArea').scrollIntoView({behavior:'smooth'})};
+document.getElementById('joinBtn').onclick=()=>{let room=document.getElementById('roomName').value.trim().replace(/[^a-zA-Z0-9_-]/g,'');if(!room){alert('Room name भरें');return}document.getElementById('frameWrap').innerHTML=`<iframe id="liveFrame" allow="camera; microphone; fullscreen; display-capture; autoplay" src="https://meet.jit.si/${encodeURIComponent(room)}"></iframe><p class="muted">यह सार्वजनिक Jitsi demo room है; room name जानने वाला कोई भी व्यक्ति जुड़ सकता है। निजी क्लास के लिए इसे सुरक्षित सेटअप से बदलें।</p>`};
+renderFilters();renderLectures();
 </script>
-</body>
-</html>
+</body></html>
